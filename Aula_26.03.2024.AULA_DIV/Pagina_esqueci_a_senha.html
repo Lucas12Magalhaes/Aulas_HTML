@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Recuperação de senha</title>
+        <style>
+            body
+            {
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+            }
+            
+            form
+            {
+                display: inline-block;
+                border: 1px solid rgb(61, 184, 102);
+                border-radius: 50px;
+                padding: 20px;
+                background-color: rgb(61, 184, 102);
+            }
+            div
+            {
+                padding: 3px;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <div>
+                <h1>Recuperação de senha</h1>
+                <h3>Banco DD</h3>
+                <div>
+                    <label>Agência</label>
+                    <input type="number" id="txtUsuario" name="useragencia" required>
+                </div>
+                <div>
+                    <label>Conta</label>
+                    <input type="number" id="txtUsuario" name="userconta" required>
+                </div>
+                <div>
+                    <label>Nome completo</label>
+                    <input type="text" id="txtUsuario" name="username" required>
+                </div>
+                <div>
+                    <label>CPF</label>
+                    <input type="number" id="txtUsuario" name="usercpf" required>
+                </div>
+                <div>
+                    <label>Data de nascimento</label>
+                    <input type="date" id="txtUsuario" name="userdate" required>
+                </div>
+                <div>
+                    <label>E-mail</label>
+                    <input type="email" id="txtUsuario" name="useremail" required>
+                </div>
+                <br>
+                <div>
+                    <a href="Pagina_de_login_DIM_DIM.html">Voltar</a>
+                    <button type="submit" id="btnEnviar">Enviar</button>
+                    <h5>
+                        Após verificação, será enviado um link via e-mail com o passo a passo para redefinir a senha.
+                    </h5>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>

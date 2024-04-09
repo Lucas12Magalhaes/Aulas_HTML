@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta chargeset="utf-8">
+      <title>Login_DIM_DIM</title>
+      <!-- Todos os elementos do style, o ideal seria estar no CSS e nao no HTML -->
+      <style>
+        /* Abaixo to criando o alinhamento do texto e fonte de tudo que esta no body */
+        body 
+        {
+          font-family: Arial, Helvetica, sans-serif;
+          text-align: center;
+        }
+        form
+        {
+          display: inline-block; 
+          text-align: center;
+          /* O comando abaixo cria uma borda */
+          border: 1px solid rgb(22, 114, 201);
+          /* O comando abaixo cria espaco entre os caracteres e a borda */
+          padding: 20px;
+          /* O comando abaixo arredonda a borda */
+          border-radius: 50px;
+          background-color: rgb(61, 184, 102);
+        }
+        /* Colocando da forma abaixo, os elementos da label e input serao os mesmos, como alinhamento, cor, etc */
+        label, input
+        {
+          display: block;
+          margin-bottom: 5px;
+        }        
+      </style>
+    </head>
+    <body>
+        <form action="/" method="post">
+            <h2>Login DD</h2>
+            <div>
+              <label>Usuário</label>
+              <input type="text" id="txtUsuario" name="username" required></input>
+            </div>
+            <div>
+              <label>Senha</label>
+              <input type="password" id="txtSenha" name="password" required></input>
+            </div>
+            <div>
+              <a href="/esquecisenha.html">Esqueci minha senha</a>
+            </div>
+            <div>
+              <button type="submit" id="btnEntrar">Entrar</button>
+            </div>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR ">
+    <head>
+        <meta charset="utf-8">
+        <title>Página Inicial DIMDIM</title>
+        <!-- Tudo que esta no style, poderia estar em um arquivo CSS -->
+        <style>
+            nav ul
+            {
+                /* Abaixo ele vai remover aquele roxo apos abrirmos o link */
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                background-color: #333;
+                text-align: center;
+            }
+            nav ul li
+            {
+                display: inline-block;
+                margin-right: 20px;
+                position: relative;
+            }
+            nav ul li a
+            {
+                display: block;
+                color: white;
+                /* Abaixo ele vai remover aquele roxo apos abrirmos o link */
+                text-decoration: none;
+                padding: 10px 20px;
+            }
+            /* A tag :hover muda a cor do link ao passar o mouse por cima da linha */
+            nav ul li a:hover
+            {
+                background-color: rgb(50, 170, 50);
+            }
+            /* Abaixo to mudando o estilo da lista dentro de outra lista */
+            nav ul ul
+            {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                background-color: #f9f9f9;
+                padding: 0;
+            }
+            nav ul ul li
+            {
+                display: block;
+            }
+            /* Position ta definindo que a posição do menu que vai abrir sera abaixo do item tipo transrencias e dentro PIX etc (Foi mexido em todos os NAV para chegar ate essa parte, cada um vai a parte*/
+
+            nav ul li:hover ul
+            {
+                display: block;
+            }
+
+        </style>
+    </head>
+    <body>
+        <!-- nav é a navegação -->
+        <nav>
+            <!-- ul e a lista que esta dentro da navegação -->
+            <ul>
+                <!-- li é a linha dentro da lista -->
+                <li>
+                    <a href="#">Cartão</a>
+                </li>
+                <li>
+                    <a href="#">Transferências</a>
+                    <!-- Abaixo estou criando uma lista dentro de transferencias -->
+                    <ul>
+                        <li>
+                            <a href="#">PIX</a>
+                            <a href="#">TED</a>
+                            <a href="#">DOC</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Pagamentos</a>
+                </li>
+            </ul>
+        </nav>
+    </body>
+</html>
